@@ -80,7 +80,7 @@ const login = async (req, res, next) => {
   // ... (votre code pour la validation de l'utilisateur)
 
   const token = await jwt.sign(
-    { sub: user.id, isAdmin: user.isAdmin },
+    { sub: user.id, isAdmin: user.is_admin },
     process.env.APP_SECRET,
     {
       expiresIn: "1h",
