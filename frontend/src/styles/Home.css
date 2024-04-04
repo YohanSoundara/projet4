@@ -1,0 +1,16 @@
+.cardHome {
+  padding: 100px 450px 0 450px;
+}
+
+.container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-home img {
+  height: 106px;
+  width: 160px;
+  object-fit: cover;
+}

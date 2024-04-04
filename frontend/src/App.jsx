@@ -1,7 +1,7 @@
-import { Link, Outlet } from "react-router-dom";
-
+import { Outlet } from "react-router-dom";
 import "./App.css";
 import { useState } from "react";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [user, setUser] = useState();
@@ -9,34 +9,8 @@ function App() {
   return (
     <>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          {user == null ? (
-            <>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-              <li>
-                <Link to="/register">Register</Link>
-              </li>
-            </>
-          ) : (
-            <li>
-              <button
-                type="button"
-                onClick={() => {
-                  setUser(null);
-                }}
-              >
-                Logout
-              </button>
-            </li>
-          )}
-        </ul>
+        <NavBar />
       </nav>
-      {user && <p>Hello {user.email}</p>}
       <main>
         <Outlet context={{ user, setUser }} />
       </main>

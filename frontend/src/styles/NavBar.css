@@ -1,0 +1,21 @@
+.navTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.navTopLeft a img {
+  height: 140px;
+}
+
+.menu-item {
+  padding: 10px;
+}
