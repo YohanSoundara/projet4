@@ -11,7 +11,7 @@ function NavBar() {
           </a>
         </div>
         <div className="navTopCenter">
-          <p>Marc's Page</p>
+          <p id="navName">Marc's Page</p>
         </div>
         <div className="navTopRight">
           <button type="button">Suivre</button>
@@ -25,7 +25,7 @@ function NavBar() {
           </a>
         </div>
         <div className="menu-item">
-          <a role="button" href="/">
+          <a role="button" href="/write">
             Ecrire
           </a>
         </div>

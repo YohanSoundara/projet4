@@ -40,17 +40,17 @@ const read = async (req, res, next) => {
 // The A of BREAD - Add (Create) operation
 const add = async (req, res, next) => {
   // Only allowed if authentified
-  if (req.body.userId == null) {
-    res.sendStatus(401);
-    return;
-  }
+  // if (req.body.userId == null) {
+  //   res.sendStatus(401);
+  //   return;
+  // }
 
   // Extract the item data from the request body
   const item = { ...req.body, user_id: req.body.userId };
 
   try {
     // Insert the item into the database
-    const insertId = await tables.item.create(item);
+    const insertId = await tables.article.create(item);
 
     // Respond with HTTP 201 (Created) and the ID of the newly inserted item
     res.status(201).json({ insertId });

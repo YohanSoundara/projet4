@@ -12,8 +12,8 @@ class ItemManager extends AbstractManager {
   async create(item) {
     // Execute the SQL INSERT query to add a new item to the "item" table
     const [result] = await this.database.query(
-      `insert into ${this.table} (title, user_id) values (?, ?)`,
-      [item.title, item.user_id]
+      `insert into ${this.table} (title, resume, texte) values (?, ?, ?)`,
+      [item.title, item.resume, item.texte]
     );
 
     // Return the ID of the newly inserted item

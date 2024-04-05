@@ -4,13 +4,19 @@
 
 .container-home {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 20px;
 }
 
 .container-home img {
   height: 106px;
-  width: 160px;
+  width: 350px;
   object-fit: cover;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 35px;
 }
